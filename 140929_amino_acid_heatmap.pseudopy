@@ -3,8 +3,7 @@
 
 load allele_dic.pkl as a dictionary of barcode-allele mappings # each key will be a sequence read, each value will be of the form 72_AUC
 load translate.pkl to as a dictionary of codon-AA mappings # each key is a codon and each value is an amino acid (or STOP)
-
-Make a mapping of amino acids to numbers for the heatmap. # We may provide one for you.
+load aminotonumber.pkl as a dictionary mapping amino acids to numbers (for graphing)
 
 Make a 21x75 array of 0's. # 1 extra for the stop codon...
 
