@@ -1,0 +1,22 @@
+# This pseudocode describes how to run the first day project for 2014 pubs:
+# Generating a heatmap of amino acid coverage by the library Iggy made.
+
+load allele_dic.pkl as a dictionary of barcode-allele mappings # each key will be a sequence read, each value will be of the form 72_AUC
+load translate.pkl to as a dictionary of codon-AA mappings # each key is a codon and each value is an amino acid (or STOP)
+
+Make a mapping of amino acids to numbers for the heatmap. # We may provide one for you.
+
+Make a 21x75 array of 0's. # 1 extra for the stop codon...
+
+Iterate over each value of your dictionary of barcode-allele mappings:
+  Split the value so you have the amino acid position and the codon.
+  Translate the codon, not only in amino acid space but also into numerical space.
+  Add 1 to the nth row/mth column of the array, where n is the amino acid number and n is the amino acid number.
+
+Graph your array using matplotlib.
+Label the y axis using your amino acid to numbers mapping.
+Label the x axis numerically to indicate amino acid position.
+Display or save the graph.
+
+
+

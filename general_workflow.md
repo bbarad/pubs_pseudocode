@@ -10,4 +10,9 @@ codon and ultimately amino acid space.
 
 ## Converting codon space to amino acid space. 
 The day one project for the students will be to convert the barcode coverage 
-heatmap from codon to amino acid space.
+heatmap from codon to amino acid space. To this end, they will be given a pair 
+of Pickle files. The first contains a dictionary relating barcodes to the 
+position and codon they refer to. The second contains a dictionary which has a 
+translation between codon space and amino acid space. The ultimate goal is to 
+have a heatmap showing the number of barcodes in the library which read to each
+amino acid at each position of Ubiquitin.
